@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>amazing world</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- GRT Youtube Plugin CSS -->
+		<link rel="stylesheet" href="css/grt-responsive-menu.css">
+		<link rel="stylesheet" href="css/jquery.bxslider.css">
+		<link rel="stylesheet" href="css/lightbox.css">
+		
+		<style>
+			#galleria img {
+				height: 150px;
+				filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.493));
+				padding: 5px;
+			}
+
+		
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="menu-container">
+				<div class="row no-margin">
+					<div class="col-sm-4 col-xs-6 no-padding">
+						<a href="#"  class="grt-logo"><img src="logo1.jpg"></a>
+					</div>
+					<div class="col-sm-8 col-xs-6 no-padding">
+						<nav>
+                            <button class="grt-mobile-button">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                            </button>
+                            <ul class="grt-menu">
+                                <li class="active"><a href="">Etusivu</a></li>
+								<li><a href="">Galleria</a></li>
+								<li class="grt-dropdown"><a>Tampere</a>
+                                    <ul class="grt-dropdown-list">
+                                        <li><a href="matka.html">matka</a></li>
+                                        <li><a href="tapahtumat.html">tapahtumat</a></li>
+                                        <li><a href="saa.html">sää</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="liikenne.html">Liikenne</a></li>
+                                <li><a href="kuvat.html">kuvat</a></li>
+                               
+                            </ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+        
+		<div class="container">
+		<div class="slider">
+			<div>
+				<img src="images/kuva1.jpg">
+			</div>
+			<div>
+				<img src="images/kuva2.jpg">
+			</div>
+			</div>
+			<div id="galleria">
+				<a href="images/kuva1.jpg" data-lightbox="roadtrip"><img src="images/kuva1.jpg"></a>
+				<a href="images/kuva2.jpg" data-lightbox="roadtrip"><img src="images/kuva2.jpg"></a>
+				<a href="images/kuva1.jpg" data-lightbox="roadtrip"><img src="images/kuva1.jpg"></a>
+			</div>
+		</div>
+
+		<!-- Jquery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/grt-responsive-menu.js"></script>
+		<script src="js/jquery.bxslider.js"></script>
+		<script src="js/lightbox.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			$('.slider').bxSlider();
+			});
+		   </script>
+	</body>
+</html>
